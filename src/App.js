@@ -165,12 +165,12 @@ function App() {
       </div>
 
     {/* Images */}
-   { 
+   {/* { 
       <InfiniteScroll
         dataLength={imageLists?.length || 0}
         next={getImages}
         hasMore={scrollMore}
-        // loader={<div style={{ marginLeft: '40%' }}><CircularProgress /></div>}
+        endMessage='Thats all'
       >
         <div className='imageListContainer'>
             {
@@ -184,14 +184,14 @@ function App() {
             }
         </div>
       </InfiniteScroll>
-    }
+    } */}
 
-    <BasicModal
+    {/* <BasicModal
       open={modalOpen}
       handleClose={handleModalClose}
       src={modalsrc}
-    />
-     <Snackbar
+    /> */}
+     {/* <Snackbar
         anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
         open={snackBarMessage}
         onClose={snackBarHandleClose}
@@ -200,7 +200,7 @@ function App() {
 
       <div style={{ marginLeft: '45%' }}>
        {displayLoader && <CircularProgress/>}
-      </div>
+      </div> */}
     </>
   );
 }
